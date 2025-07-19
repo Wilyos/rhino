@@ -42,7 +42,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="testimonials-section" style={{  background: 'linear-gradient(to bottom, #666666 12%, #ababab 80%)'}}>
+    <section className="testimonials-section" >
       <h3 className="subheading">People love us</h3>
       <h1 className="heading">TESTIMONIALS</h1>
 

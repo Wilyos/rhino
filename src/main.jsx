@@ -6,6 +6,8 @@ import Hero from './components/Hero'
 import { Services } from './components/Services'
 import Benefits from './components/Benefits'
 import Testimonials from './components/Testimonials'
+import Numbers from './components/Numbers'
+import Gallery from './components/Gallery'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +16,7 @@ createRoot(document.getElementById('root')).render(
       <Services />
       <Benefits />
       <Testimonials />
+      <Numbers />
+      <Gallery />
   </StrictMode>,
 )
