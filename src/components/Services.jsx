@@ -10,7 +10,7 @@ import flecha from '../assets/iconos/flechaAzul.png';
 export const Services = () => {
   return(
     <section>
-      <div className="services-section"  style={{background: 'linear-gradient(#666666 12%, #ABABAB 80%)'}}> 
+      <div className="services-section"  > 
 
       
           <div className="services-info">
