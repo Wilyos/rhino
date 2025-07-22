@@ -16,14 +16,14 @@ export default function Header() {
           <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
             <FaTiktok className="cursor-pointer hover:text-white" />
           </a>
-          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/17869676854" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp className="cursor-pointer hover:text-white" />
           </a>
         </div>
         <div className="login-register">
           <div className='vertical-line'></div>
           <span className="border-r border-gray-500 pr-2"> </span>
-          <a href="/login" className="hover:text-white">Login / Register</a>
+         {/* <a href="/login" className="hover:text-white">Login / Register</a> */}
         </div>
       </div>
 

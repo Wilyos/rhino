@@ -8,6 +8,8 @@ import Benefits from './components/Benefits'
 import Testimonials from './components/Testimonials'
 import Numbers from './components/Numbers'
 import Gallery from './components/Gallery'
+import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,5 +20,7 @@ createRoot(document.getElementById('root')).render(
       <Testimonials />
       <Numbers />
       <Gallery />
+      <ContactForm />
+      <Footer />
   </StrictMode>,
 )
