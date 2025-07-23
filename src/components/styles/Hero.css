@@ -18,3 +18,32 @@
 .swiper-pagination-bullet-active {
   background-color: transparent;
 }
+
+
+@media (max-width: 600px) {
+
+  .swiper-button-next,
+.swiper-button-prev {
+  color: transparent;
+  display: none;
+}
+
+
+.swiper {
+  width: 100vw;
+  height: 70vh;
+  display: none;
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: transparent;
+  display: none;
+}
+}

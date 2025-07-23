@@ -157,6 +157,10 @@
   .menu a {
     font-size: 1.2rem;
   }
+
+  .swiper {
+      display: none;
+  }
 }
 
 /* Hero.css */
@@ -165,6 +169,7 @@
   height: 100vh; /* O ajusta a 80vh si prefieres menos altura */
   position: relative;
   z-index: 1;
+
 }
 
 .swiper-slide img {
@@ -365,6 +370,10 @@
 
   .service-arrow {
     width: 2rem;
+  }
+
+  .swiper {
+      display: none;
   }
 }
 
