@@ -10,7 +10,7 @@ import flecha from '../assets/iconos/flechaAzul.png';
 export const Services = () => {
   return(
     <section>
-      <div className="services-section"  > 
+      <div className="services-section" id='services'  > 
 
       
           <div className="services-info">

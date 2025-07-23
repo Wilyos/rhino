@@ -42,7 +42,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="testimonials-section" >
+    <section className="testimonials-section" id="testimonials" >
       
         <Slider {...settings} className="testimonial-slider">
             {Users.map(user => (

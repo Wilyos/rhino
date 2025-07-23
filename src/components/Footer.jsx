@@ -59,36 +59,36 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-links">
-                <h3>Useful links</h3>
-                <hr />
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Our portfolio</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
+                    <h3>Useful links</h3>
+                    <hr />
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Our services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#portfolio">Our portfolio</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
                 </div>
 
                 <div className="footer-newsletter">
-                <h3>Send Me a Mesagge</h3>
-                <hr />
-                <p><strong>Got questions about our products or services?</strong></p>
-                <p>We’re here to help! Fill out the form below and we’ll get back to you as soon as possible. Whether you're curious about prices, paint options, or repair solutions — don’t hesitate to reach out.</p>
-                <form className="newsletter-form" onSubmit={(e) => {
-                    e.preventDefault();
-                    const numero = '17869676854';
-                    const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
-                    window.open(enlace, '_blank'); 
-                }}>
-                    <input type="text"
-                        placeholder="Your mesagge.."
-                        value={mensaje}
-                        onChange={(e) => setMensaje(e.target.value)}
-                        className="input" />
-                    <button type="submit"> <IoLogoWhatsapp  className="send-icon"  /> </button>
-                </form>
-                <p><strong>Join our list of clients.</strong></p>
+                    <h3>Send Me a Mesagge</h3>
+                    <hr />
+                    <p><strong>Got questions about our products or services?</strong></p>
+                    <p>We’re here to help! Fill out the form below and we’ll get back to you as soon as possible. Whether you're curious about prices, paint options, or repair solutions — don’t hesitate to reach out.</p>
+                    <form className="newsletter-form" onSubmit={(e) => {
+                        e.preventDefault();
+                        const numero = '17869676854';
+                        const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+                        window.open(enlace, '_blank'); 
+                    }}>
+                        <input type="text"
+                            placeholder="Your mesagge.."
+                            value={mensaje}
+                            onChange={(e) => setMensaje(e.target.value)}
+                            className="input" />
+                        <button type="submit"> <IoLogoWhatsapp  className="send-icon"  /> </button>
+                    </form>
+                    <p><strong>Join our list of clients.</strong></p>
                 </div>
             </div>
         </div>

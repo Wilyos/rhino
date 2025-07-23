@@ -79,7 +79,7 @@ const Gallery = () => {
       : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="gallery-section" id='gallery'>
+    <div className="gallery-section" id='portfolio'>
       <h3>Gallery</h3>
       <h1>OUR PORTFOLIO</h1>
       <div className="gallery-container">
