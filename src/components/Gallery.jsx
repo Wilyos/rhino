@@ -1,23 +1,20 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import exterior1 from '../assets/gallery/casa-exterior-1.jpg';
+import exterior1 from '../assets/gallery/exterior-ad-1.jpg';
 import exterior2 from '../assets/gallery/casa-exterior-2.jpg';
 import exterior3 from '../assets/gallery/casa-exterior-3.jpg';
 import exterior4 from '../assets/gallery/casa-exterior-4.jpg';
-import interior1 from '../assets/gallery/casa-interior-1.jpg';
-import interior2 from '../assets/gallery/casa-interior-2.jpg';
-import interior3 from '../assets/gallery/casa-interior-3.jpg';
+import interior1 from '../assets/gallery/interior-ad-1.jpg';
+import interior2 from '../assets/gallery/interior-ad-2.jpg';
+import interior3 from '../assets/gallery/interior-ad-3.jpg';
 import interior4 from '../assets/gallery/casa-interior-4.jpg';
 import interior5 from '../assets/gallery/casa-interior-5.jpg';
-import reparacion1 from '../assets/gallery/reparacion-1.jpg';
-import reparacion2 from '../assets/gallery/reparacion-2.jpg';
-import reparacion3 from '../assets/gallery/reparacion-3.jpg';
+
 
 const categories = [
   'All',
   'Exterior Painting',
   'Interior Painting',
-  'Repair & Surface Restauration',
 ];
 
 const galleryItems = [
@@ -30,9 +27,6 @@ const galleryItems = [
   { id: 7, src: interior3, category: 'Interior Painting' },
   { id: 8, src: interior4, category: 'Interior Painting' },
   { id: 9, src: interior5, category: 'Interior Painting' },
-  { id: 10, src: reparacion1, category: 'Repair & Surface Restauration' },
-  { id: 11, src: reparacion2, category: 'Repair & Surface Restauration' },
-  { id: 12, src: reparacion3, category: 'Repair & Surface Restauration' },
 ];
 
 
