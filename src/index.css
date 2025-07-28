@@ -73,6 +73,7 @@
   display: flex;
   gap: 4rem;
   font-weight: 500;
+
 }
 .menu a {
   color: white;
@@ -92,11 +93,15 @@
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .top-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1rem;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+
+  .vertical-line{ 
+    display: none;
   }
 
   .social-icons {
@@ -130,7 +135,7 @@
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: 3rem;
     z-index: 20;
     display:block;
     justify-content:center;
@@ -149,7 +154,7 @@
 
   .menu.open {
     display: flex;
-    max-height: 500px; /* suficiente para contener todos los enlaces */
+    max-height: 500px; 
     opacity: 1;
     padding: 1rem;
   }
@@ -166,7 +171,7 @@
 /* Hero.css */
 .swiper {
   width: 100%;
-  height: 100vh; /* O ajusta a 80vh si prefieres menos altura */
+  height: 100vh; 
   position: relative;
   z-index: 1;
 
@@ -175,7 +180,7 @@
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Llena completamente el contenedor */
+  object-fit: cover; 
 }
 
 /* Responsive fallback para pantallas pequeñas */
@@ -323,7 +328,7 @@
   }
 
   .services-grid {
-    grid-template-columns: 1fr; /* Una columna para tablets */
+    grid-template-columns: 1fr; 
     gap: 1.5rem;
   }
 
@@ -861,7 +866,7 @@
 }
 
 .gallery-grid {
-  columns: 3 250px; /* 3 columnas de al menos 250px */
+  columns: 3 250px; 
   column-gap: 1rem;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -1234,6 +1239,7 @@
 .footer-contact p,
 .footer-links ul li,
 .footer-newsletter p {
+
   font-size: 1.2rem;
   font-weight: 400;
   line-height:1.5;
@@ -1327,7 +1333,7 @@
   }
 
   .footer-logo-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 100%;
     text-align: center;
   }
@@ -1341,11 +1347,26 @@
   .footer-contact,
   .footer-links,
   .footer-newsletter {
+  
     max-width: 100%;
     align-items: center;
+    justify-content:center;
     text-align: center;
     padding: 0;
   }
+
+  .footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+  .footer-newsletter p:last-of-type {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
 
   .footer-links ul li{
     display: flex;
@@ -1370,13 +1391,15 @@
   }
 
   .newsletter-form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
   .newsletter-form p{
-    margin-left: 20px;
+    text-align: center;
+    margin: auto;
   }
 
   .newsletter-form input {
@@ -1387,7 +1410,7 @@
 
   .newsletter-form button {
     border-radius: 10px;
-    width: 30%;
+    width: 20%;
     justify-content: center;
     text-align: center;
   }
