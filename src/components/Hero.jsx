@@ -30,13 +30,19 @@ const Hero = () => {
         className='swiper'
       >
         <SwiperSlide>
-          <img src={banner1} alt="Banner 1" className="w-full h-80 object-contain" />
+          <a href="#contact">
+            <img src={banner1} alt="Banner 1" className="w-full h-80 object-contain" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={banner2} alt="Banner 2" className="w-full h-80 object-contain" />
+          <a href="#contact">
+            <img src={banner2} alt="Banner 2" className="w-full h-80 object-contain" />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={banner3} alt="Banner 3" className="w-full h-80 object-contain" />
+          <a href="#contact">
+            <img src={banner3} alt="Banner 3" className="w-full h-80 object-contain" />
+          </a>
         </SwiperSlide>
       </Swiper>
 
