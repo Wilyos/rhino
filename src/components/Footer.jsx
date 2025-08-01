@@ -46,7 +46,7 @@ const Footer = () => {
                     </span>
                     <span>
                         <TbMail  className='icon-form-footer'/>
-                        <p> juanvasquezocampo0181@gmail.com</p>
+                        <p> manager@rhinousacom.org</p>
                     </span>
                 
                 
