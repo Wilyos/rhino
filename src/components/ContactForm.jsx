@@ -23,24 +23,18 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const res = await fetch('https://correo-rhino.onrender.com/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-
-       const data = await res.json();
-      if (data.success) {
-        setStatus('Message sent successfully!');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setStatus('Failed to send message. Please try again.');
+      try {
+        const res = await axios.post('https://correo-rhino.onrender.com/api/send-email', formData);
+        if (res.data.success) {
+          setStatus('Message sent successfully!');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        } else {
+          setStatus('Failed to send message. Please try again.');
+        }
+      } catch (error) {
+        console.error(error);
+        setStatus('Error sending message. Please ensure the server is online.');
       }
-    } catch (error) {
-      console.error(error);
-      setStatus('Error sending message.');
-    }
   };
 
   return (
