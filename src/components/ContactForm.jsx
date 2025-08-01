@@ -24,7 +24,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/send-email', {
+      const res = await fetch('https://correo-rhino.onrender.com/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -61,7 +61,7 @@ const ContactForm = () => {
             </div>
             <div className="info-item">
                 <TbMail className="icon-form" />
-                <span>juanvasquezocampo0181@gmail.com</span>
+                <span>manager@rhinousacom.org </span>
             </div>
         </div>
 

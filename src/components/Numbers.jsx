@@ -9,12 +9,12 @@ const Numbers = () => {
     <div className="numbers-section">
         <div className="number-item">
             <img src={testi1} alt="" />
-            <h1>200</h1>
+            <h1>82</h1>
             <p>Our Customers</p>
         </div>
         <div className="number-item">
             <img src={testi2} alt="" />
-            <h1>110</h1>
+            <h1>77</h1>
             <p>Happy Clients</p>
         </div>
         <div className="number-item">
