@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import exterior1 from '../assets/gallery/exterior-ad-1.jpg';
-import exterior2 from '../assets/gallery/casa-exterior-2.jpg';
-import exterior3 from '../assets/gallery/casa-exterior-3.jpg';
-import exterior4 from '../assets/gallery/casa-exterior-4.jpg';
+import exterior2 from '../assets/gallery/exterior-ad-2.jpg';
+import exterior3 from '../assets/gallery/exterior-ad-3.jpg';
+import exterior4 from '../assets/gallery/exterior-ad-4.jpg';
 import interior1 from '../assets/gallery/interior-ad-1.jpg';
 import interior2 from '../assets/gallery/interior-ad-2.jpg';
 import interior3 from '../assets/gallery/interior-ad-3.jpg';
-import interior4 from '../assets/gallery/casa-interior-4.jpg';
-import interior5 from '../assets/gallery/casa-interior-5.jpg';
 
 
 const categories = [
@@ -24,9 +22,7 @@ const galleryItems = [
   { id: 4, src: exterior4, category: 'Exterior Painting' },
   { id: 5, src: interior1, category: 'Interior Painting' },
   { id: 6, src: interior2, category: 'Interior Painting' },
-  { id: 7, src: interior3, category: 'Interior Painting' },
-  { id: 8, src: interior4, category: 'Interior Painting' },
-  { id: 9, src: interior5, category: 'Interior Painting' },
+  { id: 7, src: interior3, category: 'Interior Painting' }
 ];
 
 
@@ -52,7 +48,7 @@ const Gallery = () => {
 
 
    const handleCategoryChange = (cat) => {
-  setFadeOut(true); // inicia fade-out
+  setFadeOut(true); 
 
   setTimeout(() => {
     const filtered =
@@ -60,10 +56,10 @@ const Gallery = () => {
         ? galleryItems
         : galleryItems.filter(item => item.category === cat);
 
-    setDisplayedItems(filtered);     // cambia las imágenes
-    setSelectedCategory(cat);       // cambia la categoría
-    setFadeOut(false);              // termina fade
-  }, 300); // mismo tiempo que la transición
+    setDisplayedItems(filtered);     
+    setSelectedCategory(cat);      
+    setFadeOut(false);             
+  }, 300); 
 };
 
 
