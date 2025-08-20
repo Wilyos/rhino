@@ -1,4 +1,40 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap');
+
+#root, header {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: clip !important;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#root {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: clip !important;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Forzar que los sliders/carouseles no desborden horizontalmente */
+.slick-slider, .slick-list, .slick-track {
+  max-width: 100vw !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 
 *{
@@ -23,6 +59,7 @@
   display: flex;
   gap: 4rem;
   padding-left: 8rem;
+  max-width: 100%;
 }
 .social-icons a {
   color: #39E1DC;
@@ -315,7 +352,8 @@
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
   .services-section {
-    padding: 4rem 4rem;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
   }
 
   .services-info h1 {
@@ -350,6 +388,7 @@
 @media (max-width: 600px) {
   .services-section {
     padding: 3rem 1rem;
+    box-sizing: border-box;
   }
 
   .services-info h1 {
@@ -418,10 +457,11 @@
 
 .benefits-info p{
   text-align: center;
-  padding: 0 12rem;
+  padding: 0 1rem;
   font-weight: 400;
   color: white;
   font-size: 1.1rem;
+  box-sizing: border-box;
 }
 
 .benefits-list{
@@ -430,7 +470,8 @@
   justify-content: center;
   align-items: center;
   border-top: 2px solid #39E1DC;
-  width: 80vw;
+  width: 100%;
+  box-sizing: border-box;
   margin-top: 2rem;
 }
 
@@ -492,6 +533,7 @@
 @media (max-width: 600px) {
   .benefits-info {
     padding: 3rem 1rem;
+    box-sizing: border-box;
   }
 
   .benefits-info h1 {
@@ -516,9 +558,10 @@
 /*testimonials section */
 
 .testimonials-section {
-  padding: 4rem 1rem;
+  padding: 4rem 2vw;
   text-align: center;
   background: linear-gradient(to bottom, #666666 12%, #ababab 80%);
+  box-sizing: border-box;
 }
 
 .subheading {
@@ -940,6 +983,7 @@
 @media (max-width: 600px) {
   .gallery-section {
     padding: 2rem 0.5rem;
+    box-sizing: border-box;
   }
 
   .gallery-section h1 {
@@ -977,7 +1021,8 @@
   background-color: #111;
   color: #ccc;
   text-align: center;
-  padding: 40px 12rem;
+  padding: 40px 1rem;
+  box-sizing: border-box;
 }
 
 .contact-header p {
