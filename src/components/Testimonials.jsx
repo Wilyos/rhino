@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import phone from "../assets/iconos/testimonialsPhone.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 
 const Users = [
@@ -40,6 +41,18 @@ const Testimonials = () => {
     autoplaySpeed: 5000,
     arrows: false
   };
+
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isMobile) return null; 
 
   return (
     <section className="testimonials-section" id="testimonials" >
