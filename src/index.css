@@ -18,6 +18,29 @@ img {
   display: block;
 }
 
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 768px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 768px;
+  }
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
 
 .top-bar, 
 .navbar, 
@@ -1141,6 +1164,17 @@ img {
   color: #39E1DC;
 }
 @media (max-width: 768px) {
+
+  body {
+  overflow-x: hidden; /* evita el scroll mientras debuggeas */
+  }
+
+
+
+body * {
+  animation: highlightOverflow 2s infinite;
+  max-width: 100%; /* para que no rompan */
+}
   .contact-section {
     padding: 2rem 1rem;
   }
@@ -1507,4 +1541,8 @@ img {
 }
 
 }
+
+
+
+
 
