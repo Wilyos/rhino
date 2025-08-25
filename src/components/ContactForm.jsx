@@ -23,18 +23,29 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Enviar evento Lead a Meta Pixel cuando el usuario hace clic en "Send Message"
+    if (typeof window !== 'undefined' && window.fbq) {
       try {
-        const res = await axios.post('https://correo-rhino.onrender.com/api/send-email', formData);
-        if (res.data.success) {
-          setStatus('Message sent successfully!');
-          setFormData({ name: '', email: '', subject: '', message: '' });
-        } else {
-          setStatus('Failed to send message. Please try again.');
-        }
-      } catch (error) {
-        console.error(error);
-        setStatus('Error sending message. Please ensure the server is online.');
+        window.fbq('track', 'Lead');
+        console.log('Meta Pixel: Lead event sent from ContactForm');
+      } catch (err) {
+        console.warn('Meta Pixel track error:', err);
       }
+    }
+
+    try {
+      const res = await axios.post('https://correo-rhino.onrender.com/api/send-email', formData);
+      if (res.data.success) {
+        setStatus('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus('Error sending message. Please ensure the server is online.');
+    }
   };
 
   return (
