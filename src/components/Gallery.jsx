@@ -50,6 +50,15 @@ const Gallery = () => {
    const handleCategoryChange = (cat) => {
   setFadeOut(true); 
 
+  // Enviar evento ViewContent a Meta Pixel al seleccionar categoría
+  if (typeof window !== 'undefined' && window.fbq) {
+    try {
+      window.fbq('track', 'ViewContent', { content_name: cat });
+    } catch (err) {
+      console.warn('Meta Pixel track error:', err);
+    }
+  }
+
   setTimeout(() => {
     const filtered =
       cat === 'All'

@@ -77,6 +77,14 @@ const Footer = () => {
                     <p>We’re here to help! Fill out the form below and we’ll get back to you as soon as possible. Whether you're curious about prices, paint options, or repair solutions — don’t hesitate to reach out.</p>
                     <form className="newsletter-form" onSubmit={(e) => {
                         e.preventDefault();
+                        // Enviar evento Lead a Meta Pixel
+                        if (typeof window !== 'undefined' && window.fbq) {
+                          try {
+                            window.fbq('track', 'Lead', { source: 'Footer Newsletter' });
+                          } catch (err) {
+                            console.warn('Meta Pixel track error:', err);
+                          }
+                        }
                         const numero = '17869676854';
                         const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
                         window.open(enlace, '_blank'); 
