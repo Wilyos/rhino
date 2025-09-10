@@ -38,7 +38,7 @@ export default function App() {
       "https://connect.facebook.net/en_US/fbevents.js"
     );
 
-    window.fbq("init", "1433480561311220"); // tu ID de pixel
+    window.fbq("init", "1175391464443955"); // tu ID de pixel
     window.fbq("track", "PageView");
   }, []);
 
