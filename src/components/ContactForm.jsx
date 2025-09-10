@@ -35,7 +35,7 @@ const ContactForm = () => {
     }
 
     try {
-      const res = await axios.post('https://correo-rhino.onrender.com/api/send-email', formData);
+      const res = await axios.post('https://correo-rhino.vercel.app/api/send-email', formData);
       if (res.data.success) {
         setStatus('Message sent successfully!');
         setFormData({ name: '', email: '', subject: '', message: '' });
