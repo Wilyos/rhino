@@ -1333,6 +1333,11 @@ body * {
   align-items: center;
 }
 
+.footer-socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .footer-socials img {
   width: 36px;
@@ -1500,6 +1505,8 @@ body * {
   }
 
   .footer-socials {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
