@@ -30,6 +30,11 @@ const Benefits = () => {
             </li>
           </ul>
         </div>
+        <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+          <a href="#contact" className="contact-me-btn">
+            Contact Me
+          </a>
+        </div>
       </div>
     </section>
   );

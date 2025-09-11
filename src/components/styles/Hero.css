@@ -1,3 +1,24 @@
+/* Botón metálico estilo "Contact" */
+.contact-me-btn {
+  display: inline-block;
+  padding: 0.7em 2.5em;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(180deg, #bdbdbd 0%, #888 50%, #bdbdbd 100%);
+  border: 2px solid #888;
+  border-radius: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  letter-spacing: 0.1em;
+  transition: filter 0.2s, box-shadow 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+.contact-me-btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
 .swiper-button-next,
 .swiper-button-prev {
   color: transparent;
